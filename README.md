@@ -1,6 +1,10 @@
-# 😊 Mood-Web | 心情追蹤日誌
+<p align="center">
+  <img src="public/mood-icon.png" alt="Mood Icon" width="80"/>
+</p>
 
-&gt; 人每天都有情緒，而且常常健忘。  
+<h1 align="center">😊 Mood-Web | 心情追蹤日誌</h1>
+
+&gt; 人每天都有情緒，而且常常健忘。
 &gt; 隨手記錄，回頭就能關心自己的情緒波動。
 
 ---

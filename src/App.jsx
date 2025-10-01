@@ -1,3 +1,5 @@
+import logoUrl from '/mood-icon.png';   // Vite 支援「public 根路徑」
+
 import React, { useEffect, useState, useMemo } from 'react';
 import './App.css';
 import { LineChart, Line, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer } from 'recharts';
@@ -51,7 +53,10 @@ function App() {
   /* ---------- UI ---------- */
   return (
     <div className="App">
-      <h1>心情日記（Web 離線版）</h1>
+      <div className="header">
+        <img src={logoUrl} alt="Mood" className="logo" />
+        <h1>心情日記（Web 個人版）</h1>
+      </div>
 
       <div className="btnGroup">
         {MOODS.map((m) => (
