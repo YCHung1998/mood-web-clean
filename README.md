@@ -1,16 +1,50 @@
-# React + Vite
+# 😊 Mood-Web | 心情追蹤日誌
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+&gt; 人每天都有情緒，而且常常健忘。  
+&gt; 隨手記錄，回頭就能關心自己的情緒波動。
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🔍 About
 
-## React Compiler
+- **完全離線**：資料只存瀏覽器 localStorage，不會上傳任何伺服器。
+- **開源免費**：MIT License，歡迎 Fork / PR。
+- **跨裝置**：手機 / 電腦只要有瀏覽器就能用；PWA 模式可「加到主畫面」。
 
-The React Compiler is not enabled on this template. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+---
 
-## Expanding the ESLint configuration
+## 🚀 使用說明（3 秒上手）
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+1. 打開網站 ➜ 點選今天心情（1~5 分）
+2. 關閉網頁 ➜ 資料自動儲存在本地
+3. 明天再開 ➜ 可繼續記錄，並看到最近 7 天折線圖
+
+| 分數 | 代表情緒 | 顏色提示 |
+| ---- | -------- | ------- |
+| 1    | 很糟     | 🔴 紅   |
+| 2    | 低落     | 🟠 橙   |
+| 3    | 普通     | 🟡 黃   |
+| 4    | 不錯     | 🟢 綠   |
+| 5    | 很好     | 🔵 藍   |
+
+&gt; 💡 **小提醒**：同一日重複點擊會**覆蓋**上次分數。
+
+---
+
+## 🛠 自己架站 / 開發
+
+```bash
+# 1. 克隆專案
+git clone https://github.com/&lt;你的帳號&gt;/mood-web.git
+cd mood-web
+
+# 2. 安裝依赖（鎖版本）
+npm ci
+
+# 3. 本機開發
+npm run dev
+# ➜ http://localhost:5173
+
+# 4. 編譯靜態檔
+npm run build
+# ➜ dist/ 目錄即為靜態網站
